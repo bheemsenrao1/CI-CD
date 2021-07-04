@@ -31,6 +31,17 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleversion>${mule.version}</muleversion>
+						<usernam>${anypoint.username}</usernam>
+						<password>${anypoint.password}</password>
+						<applicationname>CI-CD</applicationname>
+						<environment>${anypoint.environment}</environment>
+						<properties>
+							<key>value</key>
+						</properties>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
